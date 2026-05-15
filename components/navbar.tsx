@@ -35,7 +35,7 @@ export default function Navbar() {
           <span className="font-display text-xl font-semibold tracking-widest text-gold uppercase">
             CNBC
           </span>
-          <span className="font-body text-[10px] tracking-[0.3em] text-muted-foreground uppercase">
+          <span className="font-body text-[10px] tracking-[0.3em] text-foreground/60 uppercase mt-2">
             Film &bull; UK
           </span>
         </Link>
@@ -46,7 +46,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors duration-300"
+              className="font-body text-xs tracking-widest uppercase text-foreground/75 hover:text-gold transition-colors duration-300"
             >
               {link.label}
             </Link>
@@ -82,7 +82,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors"
+                className="font-body text-sm tracking-widest uppercase text-foreground/75 hover:text-gold transition-colors"
               >
                 {link.label}
               </Link>
