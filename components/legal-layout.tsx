@@ -45,15 +45,24 @@ export default function LegalLayout({ title, subtitle, lastUpdated, children }: 
                 If you have any questions regarding this document, please contact us at{' '}
                 <a href="mailto:info@cnbc.film" className="text-gold hover:underline">info@cnbc.film</a>
               </p>
-              <div className="flex gap-6 mt-6">
+              <div className="flex flex-wrap gap-x-6 gap-y-3 mt-6">
+                <Link href="/legal/terms-of-service" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
+                  Terms of Service
+                </Link>
                 <Link href="/legal/privacy-policy" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="/legal/terms-and-conditions" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
-                  Terms &amp; Conditions
-                </Link>
                 <Link href="/legal/cookie-policy" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
                   Cookie Policy
+                </Link>
+                <Link href="/legal/accessibility" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
+                  Accessibility
+                </Link>
+                <Link href="/legal/disclaimer" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
+                  Disclaimer
+                </Link>
+                <Link href="/legal/refund-policy" className="font-body text-xs tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors">
+                  Refund Policy
                 </Link>
               </div>
             </div>

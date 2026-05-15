@@ -14,9 +14,12 @@ const footerLinks = {
     { label: 'Casting Calls', href: '#talent' },
   ],
   Legal: [
+    { label: 'Terms of Service', href: '/legal/terms-of-service' },
     { label: 'Privacy Policy', href: '/legal/privacy-policy' },
-    { label: 'Terms & Conditions', href: '/legal/terms-and-conditions' },
     { label: 'Cookie Policy', href: '/legal/cookie-policy' },
+    { label: 'Accessibility', href: '/legal/accessibility' },
+    { label: 'Disclaimer', href: '/legal/disclaimer' },
+    { label: 'Refund Policy', href: '/legal/refund-policy' },
   ],
 }
 
@@ -83,15 +86,24 @@ export default function Footer() {
           <p className="font-body text-xs text-muted-foreground text-center md:text-left">
             &copy; {new Date().getFullYear()} CNBC Film UK — Corporate Network Broadcasting Cinema (United Kingdom). All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center gap-4">
+            <Link href="/legal/terms-of-service" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
+              Terms
+            </Link>
             <Link href="/legal/privacy-policy" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
               Privacy
             </Link>
-            <Link href="/legal/terms-and-conditions" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
-              Terms
-            </Link>
             <Link href="/legal/cookie-policy" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
               Cookies
+            </Link>
+            <Link href="/legal/accessibility" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
+              Accessibility
+            </Link>
+            <Link href="/legal/disclaimer" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
+              Disclaimer
+            </Link>
+            <Link href="/legal/refund-policy" className="font-body text-xs text-muted-foreground hover:text-gold transition-colors">
+              Refunds
             </Link>
           </div>
         </div>
