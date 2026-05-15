@@ -1,16 +1,27 @@
+import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
+import HeroSection from '@/components/sections/hero-section'
+import AboutSection from '@/components/sections/about-section'
+import SponsorshipSection from '@/components/sections/sponsorship-section'
+import TalentSection from '@/components/sections/talent-section'
+import ProductionsSection from '@/components/sections/productions-section'
+import ServicesSection from '@/components/sections/services-section'
+import ContactSection from '@/components/sections/contact-section'
+
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center font-sans">
-      <main className="flex w-full max-w-3xl flex-col items-center gap-8 px-6 py-16 text-center sm:items-start sm:text-left">
-        <div className="flex flex-col gap-4">
-          <h1 className="text-4xl font-bold tracking-tight">
-            cnbc.film
-          </h1>
-          <p className="max-w-md text-lg text-muted-foreground">
-            To get started, send a prompt or modify this page directly.
-          </p>
-        </div>
+    <>
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SponsorshipSection />
+        <TalentSection />
+        <ProductionsSection />
+        <ServicesSection />
+        <ContactSection />
       </main>
-    </div>
-  );
+      <Footer />
+    </>
+  )
 }
