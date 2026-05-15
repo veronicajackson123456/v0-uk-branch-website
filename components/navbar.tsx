@@ -35,7 +35,7 @@ export default function Navbar() {
           <span className="font-display text-xl font-semibold tracking-widest text-gold uppercase">
             CNBC
           </span>
-          <span className="font-body text-[10px] tracking-[0.3em] text-foreground/60 uppercase mt-2">
+          <span className="font-body text-[10px] tracking-[0.3em] text-foreground/60 uppercase">
             Film &bull; UK
           </span>
         </Link>
