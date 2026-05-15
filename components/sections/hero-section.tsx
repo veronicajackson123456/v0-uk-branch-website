@@ -22,7 +22,7 @@ export default function HeroSection() {
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gold opacity-60" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 text-center pt-32 md:pt-40">
         {/* Eyebrow */}
         <div className="flex items-center justify-center gap-4 mb-8">
           <span className="gold-line" />
